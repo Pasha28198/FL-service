@@ -1,1 +1,1 @@
-npm run start
+nest start
