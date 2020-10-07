@@ -31,4 +31,9 @@ export class UserService {
   async findByEmail(email: string): Promise<IUser> {
     return await this.userModel.findOne({ email }).exec();
   }
+
+  async matchRoles(id: string, roles: string[]): Promise<boolean> {
+    const user = await this.find(id);
+    return _.intersection(user.roles, roles).length === roles.length;
+  }
 }
