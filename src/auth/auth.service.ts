@@ -13,7 +13,6 @@ import { roleEnum } from '../user/enums/role.enum';
 import { IReadableUserInterface } from '../user/interfaces/readable-user.interface';
 import { ITokenPayloadInterface } from '../token/interfaces/token-payload.interface';
 import { SignInDto } from './dto/signin.dto';
-import { statusEnum } from '../user/enums/status.enum';
 import { userSensitiveFieldsEnum } from '../user/dto/protected-fields.enum';
 
 @Injectable()

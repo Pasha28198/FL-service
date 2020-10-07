@@ -1,6 +1,4 @@
 import { Document } from 'mongoose';
-import { genderEnum } from '../enums/gender.enum';
-import { roleEnum } from '../enums/role.enum';
 
 export interface IUser extends Document{
   readonly email: string;
